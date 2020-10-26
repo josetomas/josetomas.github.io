@@ -2890,7 +2890,7 @@
 
 		.wrapper.style2 {
 			background-color: #f2f2f2;
-			color: #a6a6a6;
+			color: #686868;  /*original:  #a6a6a6*/
 		}
 
 			.wrapper.style2 input, .wrapper.style2 select, .wrapper.style2 textarea {
@@ -3069,7 +3069,7 @@
 			}
 
 			.wrapper.style2 header p {
-				color: #999999;
+				color: #686868;
 			}
 
 			.wrapper.style2 table tbody tr {
