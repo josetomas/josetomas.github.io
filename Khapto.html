@@ -23,7 +23,97 @@
 				text-align: center;
 				color: white;
 			}
-		</style>
+            * {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+</style>
 	</head>
 	<body class="subpage">
 
@@ -68,7 +158,19 @@
 								<p>DIGITAL DATA ADQUISITION FOR KINESIOLOGY</p>
 							</header>
 							<p></p>
-							<p>Khapto aims to revolutionise the physiotherapy industry. This through the development of a wearable device that measures key dynamic parameters of the patients motion such as force and displacement.</p>
+							<p>
+								Khapto aims to revolutionise the physiotherapy industry. This through the development of a wearable device that measures key dynamic parameters of the patients motion such as force and displacement. All these parameters are currently read by analog old fashioned devices.
+							</p>
+							<div class="align-center">
+								<img src="images/khaptoDevices.jpg" width="600" />
+								<div class="align-center">
+									<figcaption>Devices Khapto is able to replace; goniometer, dolorimeter and dinamometer. </figcaption>
+								</div>
+							</div>
+							<p></p>
+							<p>
+								We developed a novel device that complimented the physiotherapist perception of the patients health with data. A key in the physiotherapist work is his own haptic perception, our device complimented this through a sensorized wearable glove. The goal was to augment the information specialist could get from touching their patients.   
+							</p>
 							<p><b>My contribution</b> for this start-up was centered in the process of building a robust product that could be validated in a real work environment by technical labs. During the period that I worked in this company we advanced from a mock-up version of the product to a product ready for validation. My tasks were; component selection, sensor calibration, hardware and firmware development and anti bacterial material testing. </p>
 							<div class="image fit">
 								<img src="images/KhaptoAvance.png" alt="" />
@@ -81,15 +183,122 @@
 							<ol>
 								<li>
 									<a href="https://www.kinesicwork.cl/">Kinesic Work</a>: A physical rehabilitation center in Santiago, Chile. The company conducted a client validation experiment where they had the chance to test our product directly with their clients, in their therapy process. This was part of a market validation grant the company won from the chilean state agency <a href="https://www.corfo.cl/">CORFO</a>. </p>
-									<p><b>My contribution</b> to this experiment changed within the scope of it. Before the experiment started I worked in the development of the new version of the wearable device that was going to be applied in the experiment. During the pilot I was in charge of documenting the users issues with the product, and iterating new versions. 
+									<p><b>My contribution:</b>  
+										to this experiment changed within the scope of it. Before the experiment started I worked in the development of the new version of the wearable device that was going to be applied in the experiment. During the pilot I was in charge of documenting the users issues with the product, and iterating new versions.
 									</p>
 								</li>
 							</ol>
-							<p>This work was inspired by force sensing and aptic soft skin sensors state of the art developers such as <a href="https://engineering.stanford.edu/magazine/article/zhenan-bao-quest-develop-artificial-skin-0">Zenan Bao</a>  at Bao Group and the work of <a href="https://www.seas.harvard.edu/person/robert-wood">Robert Wood</a> in Wyss Institute and Harvard MicroRobotics Laboratory.   </p>
+
+							<p>
+								This experiment was my first approach to human computer interaction, through hardware. My task was to make a pull of information from the user, physiotherapist, to build a device that suited their needs. One of the biggest challenges was to upfront the users rejection to learn new tools, especially when they are in a prototype stage.   
+							</p>
 						</div>
 					</div>
 				</div>
-			</section>
+            </section>
+            
+<!-- Gallery -->
+<h2 style="text-align:center">Gallery</h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="images/Khapto/1.jpg " style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="images/Khapto/2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="images/Khapto/4.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="images/Khapto/5.PNG" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="images/Khapto/3.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="images/Khapto/6.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+		<div class="align-center">
+	  <img class="demo cursor" src="images/Khapto/1.jpg" style="width:60%" onclick="currentSlide(1)" alt="">
+	</div>
+    </div>
+    <div class="column">
+		<div class="align-center">
+	  <img class="demo cursor" src="images/Khapto/2.jpg" style="width:60%" onclick="currentSlide(2)" alt="">
+	</div>
+    </div>
+    <div class="column">
+		<div class="align-center">
+	  	<img class="demo cursor" src="images/Khapto/4.jpg" style="width:60%" onclick="currentSlide(3)" alt="">
+	</div>
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="images/Khapto/5.PNG" style="width:120%" onclick="currentSlide(4)" alt="">
+    </div>
+    <div class="column">
+		<div class="align-center">
+			<img class="demo cursor" src="images/Khapto/3.jpg" style="width:60%" onclick="currentSlide(5)" alt="">
+		</div>
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="images/Khapto/6.jpg" style="width:78%" onclick="currentSlide(6)" alt="No">
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+   	<!-- End gallery --> 
 
 		<!-- Footer -->
 		<footer id="footer">
