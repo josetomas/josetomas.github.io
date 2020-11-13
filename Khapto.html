@@ -113,6 +113,23 @@ img {
 .demo:hover {
   opacity: 1;
 }
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0%;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
 </style>
 	</head>
 	<body class="subpage">
@@ -137,13 +154,7 @@ img {
 			</div>
 		</section>-->
 
-		<section id="One" class="wrapper style2">
-			<div class="align-center">
-				<iframe width="1200" height="700"
-					src="https://www.youtube.com/embed/2-_qSWlgQSE">
-				</iframe>
-			</div>
-		</section>
+
 
 
 		<!-- Two -->
@@ -151,9 +162,15 @@ img {
 				<div class="inner">
 					<div class="box">
 						<div class="content">
+							<div class="video-responsive">
+								<iframe width="1200" height="700"
+								src="https://www.youtube.com/embed/2-_qSWlgQSE">
+							</iframe>
+							</div>
+							<p></p>
 							<header class="align-center">
 								<a href="https://www.khapto.com/">
-									<img src="images/KahptoLogo.png" width="400">
+									<img src="images/KahptoLogo.png" width="400" class="responsive">
 								</a>
 								<p>DIGITAL DATA ADQUISITION FOR KINESIOLOGY</p>
 							</header>
@@ -162,7 +179,7 @@ img {
 								Khapto aims to revolutionise the physiotherapy industry. This through the development of a wearable device that measures key dynamic parameters of the patients motion such as force and displacement. All these parameters are currently read by analog old fashioned devices.
 							</p>
 							<div class="align-center">
-								<img src="images/khaptoDevices.jpg" width="600" />
+								<img src="images/khaptoDevices.jpg" width="600" class="responsive">
 								<div class="align-center">
 									<figcaption>Devices Khapto is able to replace; goniometer, dolorimeter and dinamometer. </figcaption>
 								</div>
