@@ -171,12 +171,12 @@ img {
 								<p>A LOW COST OPENSOURCE COMPLETE WORKFLOW FOR VISCOUS MATERIAL EXTRUSION</p>
                             </header>
                             <p></p>
-							<p>This project started as a due to the conclusion obtained during the development of <a href="AdvanceManufacture.html">Wood 3D Printer</a>.
+							<p>This project started as conclusion obtained during the development of <a href="AdvanceManufacture.html">Wood 3D Printer</a>.
                             <p>
                                 With the goal of massifying the use of biocomposites in Digital Fabrication laboratories I seek to develop a whole workflow for viscous material extrusion. This project intends to develop a simple, modular system that can be installed in any commercial 3D printer or 3 axis CNC machine. 
 							</p>
 							<p>
-                                Even though there's plenty of work done in the development of Open Hardware extrusion systems for viscous materials as clay, none of them consider a whole system. A system approach into this challenge consider how the 3 key variables relate to each other: 
+                                Even though there's plenty of work done in the development of Open Hardware extrusion systems for viscous materials as clay. None of them consider a whole system; Slicer, extrusion system (hardware and firmware) and material recipes. Its important to coinsider theres an interdepencie in this 3 variables, and any modification in one of them will afect the others: 
                             </p>
 
                             <div class="align-center">
@@ -200,7 +200,7 @@ img {
                               </ul>
                             </p>
 							<p>
-                                There isn’t a firmware, neither a protocol that enables the communication between the 3 axis machine and the extrusion system. In order to fix that I propose an architecture that would enable I2C communication from a <a href="https://reprap.org/wiki/RAMPS_1.4">Ramp1.4 </a>, running <a href="https://github.com/FabLabUTFSM/Marlin4ViscousMaterial">Marlin4ViscousMaterial </a> to a <a href="https://github.com/FabLabUTFSM/BioFeeder">Biofeeder Arduino Shield. sMaterial) to a Biofeeder Arduino Shield (https://github.com/FabLabUTFSM/BioFeeder)</a>. This architecture will allow the user to control the extrusion system variables in the same GCode. This will enable the development of one simple slicer specialized for Viscous Materials 3D printers. 
+                                There isn’t a firmware, neither a protocol that enables the communication between the 3 axis machine and the extrusion system. In order to fix that I propose an architecture that would enable I2C communication from a <a href="https://reprap.org/wiki/RAMPS_1.4">Ramp1.4 </a>, running <a href="https://github.com/FabLabUTFSM/Marlin4ViscousMaterial">Marlin4ViscousMaterial </a> to a <a href="https://github.com/FabLabUTFSM/BioFeeder">Biofeeder Arduino Shield</a>.This architecture will allow the user to control the extrusion system variables in the same GCode. This will enable the development of one simple slicer specialized for Viscous Materials 3D printers. 
                             </p>
 							<div class="align-center">
                                 <img src="images/arquitecture.png" class="responsive">
