@@ -4,352 +4,344 @@
 	templated.co @templatedco
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 -->
-<html>
+
+
+<html></html>
+
 	<head>
 		<title>José Tomás Domínguez</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		
 		<style>
-			.heroImage {
-				background: no-repeat center/100% url("../images/IntiDef.jpg");
-				height: 100%;
-				background-position: center;
-				background-repeat: no-repeat;
-				position: relative;
-			}
-			.heroContents {
-				padding-top: 450px;
-				text-align: center;
-				color: white;
-			}
-            * {
-  box-sizing: border-box;
-}
+      .bg-img {
+  /* The image used */
+  background-image: url("images/IntiDef1.2.jpg");
 
-img {
-  vertical-align: middle;
+  min-height: 380px;
 
-}
-
-/* Position the image container (needed to position the left and right arrows) */
-.container {
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  /* Needed to position the navbar */
   position: relative;
 }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
+.topnav {
+  overflow: hidden;
+  background-color: #333;
 }
 
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: black;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
+.topnav a {
+  float: left;
+  display: block;
   color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-/* Container for image text */
-.caption-container {
-  text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
   color: white;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.topnav .icon {
+  display: none;
 }
 
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 16.66%;
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
 }
 
-/* Add a transparency effect for thumnbail images */
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
-.video-responsive{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-}
-.video-responsive iframe{
-    left:0%;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-}
-.responsive {
-  max-width: 100%;
-  height: auto;
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
 		</style>
 	</head>
-	<body class="subpage">
-
-		<!-- Header -->
-			<header id="header">
-				<div class="logo"><a href="index.html"> Home <span></span></a></div>
-				<a href="#menu">Menu</a>
-			</header>
-
-		<!-- Nav -->
-			<nav id="menu">
-				<ul class="links">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="About.html">About Me</a></li>
-				</ul>
-			</nav>
-
-		<!-- One -->
-		<!--<section id="One" class="heroImage">>
-			<div class="heroContents">
-			</div>
-		</section>-->
 
 
-
-		<!-- Two -->
-			<section id="two" class="wrapper style2">
+	<body>
+    <div class = "bg-img" >
+      <div class="container"></div>
+        <div class="topnav" id="myTopnav">
+          <a href="index.html">José Tomás Domínguez</a>
+          <a href="About.html">About Me</a>
+          <a href="#SelectedWork">Selected Projects</a>
+          <a href="#LiveWork">Live Projects</a>
+		      <a href="#footer">Social Network</a>
+		      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			    <i class="fa fa-bars"></i>
+		      </a>
+        </div>
+      <div>   
+     
+        <!-- Banner -->
+			<section class="banner full">
+				<article>
+					<img src="images/IntiDef1.2.jpg" alt="" />
+				</article>
+				<article>
+					<img src="images/Khapto4.png"  />
+				</article>
+				<article>
+					<img src="images/memoria4.png"  alt="" />
+				</article>
+			</section>
+			<!-- One -->
+			<!-- hacer todos los box del mismo tamanio-->
+			<section id="SelectedWork" class="wrapper style2">
+				<header class="align-center">
+					<h2><b> SELECTED PROJECTS</b></h2>
+				</header>
+			</section>
+			<section id="Two" class="wrapper style2">
 				<div class="inner">
-					<div class="box">
-						<div class="content">
-                            <div class="video-responsive">
-                                <iframe width="1200" height="700" src="https://video.wixstatic.com/video/c7e332_c32dbe6dd1e84d01a0e89d0b26cb752c/1080p/mp4/file.mp4"></iframe>
-                            </div>
-							<header class="align-center">
+					<div class="grid-style">
+						
 
-								<p>A LOW COST OPENSOURCE COMPLETE WORKFLOW FOR VISCOUS MATERIAL EXTRUSION</p>
-                            </header>
-                            <p></p>
-							<p>This project started as conclusion obtained during the development of <a href="AdvanceManufacture.html">Wood 3D Printer</a>.
-                            <p>
-                                With the goal of massifying the use of biocomposites in Digital Fabrication laboratories I seek to develop a whole workflow for viscous material extrusion. This project intends to develop a simple, modular system that can be installed in any commercial 3D printer or 3 axis CNC machine. 
-							</p>
-							<p>
-                                Even though there's plenty of work done in the development of Open Hardware extrusion systems for viscous materials as clay. None of them consider a whole system; Slicer, extrusion system (hardware and firmware) and material recipes. Its important to coinsider theres an interdepencie in this 3 variables, and any modification in one of them will afect the others: 
-                            </p>
+						<div>
+							<div class="box">
+								<div class="image fit">
+									<a href="IntiTech.html">
+										<img src="images/Inti2.jpg" alt="" />
+									</a>
+								</div>
+								<div class="content">
+									<header class="align-center">
+										<p>Autonomous device for PV Panel cleaning</p>
+										<h2>Inti-Tech</h2>
+									</header>
+									<footer class="align-center">
+										<a href="IntiTech.html" class="button alt">Learn More</a>
+									</footer>
+								</div>
+							</div>
+						</div>
 
-                            <div class="align-center">
-                                <img src="images/extrusion2.png"  class="responsive">
-                            </div>
-							<p>
-                                This 3 key valuables show a dependency between each other, and cannot be modified without affecting the others.  Currently there is not a firmware for extrusion system control that enables the easy control and communication of these 3 parameters. 
-                            </p>
-							<p> 
-                                Open Source extrusion system commonly in work the following ways:
-                                <ul>
-                                    <li><p>
-                                        Through a mechanical feeder, through a stepper motor, controlled as a 4 axis CNC machine. 
-                                    </p></li>
-                                    <li><p>
-                                        Through a pneumatic feeder, through an air pump user controlled independent from the machine control system. 
-                                    </p></li>
-                                    <li><p>
-                                        Through any of the two previously mentioned feeders (user controlled), and an auger screw controlled as a normal 3D printer.
-                                    </p></li>
-                              </ul>
-                            </p>
-							<p>
-                                There isn’t a firmware, neither a protocol that enables the communication between the 3 axis machine and the extrusion system. In order to fix that I propose an architecture that would enable I2C communication from a <a href="https://reprap.org/wiki/RAMPS_1.4">Ramp1.4 </a>, running <a href="https://github.com/FabLabUTFSM/Marlin4ViscousMaterial">Marlin4ViscousMaterial </a> to a <a href="https://github.com/FabLabUTFSM/BioFeeder">Biofeeder Arduino Shield</a>.This architecture will allow the user to control the extrusion system variables in the same GCode. This will enable the development of one simple slicer specialized for Viscous Materials 3D printers. 
-                            </p>
-							<div class="align-center">
-                                <img src="images/arquitecture.png" class="responsive">
-                            </div>
-                            <p></p>
-                            <p>
-                                This architecture allows the user to choose the extruder configuration he prefears, direct extrusion, or an extrusion system based on an auger screw. And the feeding system, mechanical or pneumatic. 
-                            </p>
-                            
-                            <p>
-                                This is kind of one of those never ending projects. It started in 2019 during my Fab Academy course, with the objective to develop an extrusion system for viscous biomaterials. The project continued with Arauco in Chile, always with the focus on the materials formulas and properties. Currently the project is froozen, I will go back to work on it in 2021 when Chilean universities re-open.
-                            </p>
+						<div>
+							<div class="box">
+								<div class="image fit">
+									<a href="Khapto.html">
+										<img src="images/Khapto5.1.png" alt="" />
+									</a>
+								</div>
+								<div class="content">
+									<header class="align-center">
+										<p>Digital data adquisition for kinesiology</p>
+										<h2>Khapto</h2>
+									</header>
+									<footer class="align-center">
+										<a href="Khapto.html" class="button alt">Learn More</a>
+									</footer>
+								</div>
+							</div>
+						</div>
+
+						<div>
+							<div class="box">
+								<div class="image fit">
+									<a href="AdvanceManufacture.html">
+									<img src="images/memoria6.JPG" alt="" />
+								</a>
+								</div>
+								<div class="content">
+									<header class="align-center">
+										<p>additive manufacture with natural fibers</p>
+										<h2>Wood 3D Printer</h2>
+									</header>
+									<footer class="align-center">
+										<a href="AdvanceManufacture.html" class="button alt">Learn More</a>
+									</footer>
+								</div>
+							</div>
+						</div>
+
+						<!-- <div>
+							<div class="box">
+								<div class="image fit">
+									<img src="images/woodpack.jpeg" alt="" />
+								</div>
+								<div class="content">
+									<header class="align-center">
+										<p>Biodegradable materials for Circular Economy</p>
+										<h2>BioMaterial Development</h2>
+									</header>
+									<footer class="align-center">
+										<a href="#" class="button alt">Learn More</a>
+									</footer>
+								</div>
+							</div>
+						</div> -->
+
+
+						<div>
+							<div class="box">
+								<div class="image fit">
+									<a href="Fablab.html">
+									<img src="images/Fablab3.1.jpg" alt="" />
+								</a>
+								</div>
+								<div class="content">
+									<header class="align-center">
+										<p>The Fabrication Laboratory on UTFSM</p>
+										<h2>Fab Lab UTFSM</h2>
+									</header>
+									<p></p>
+									<footer class="align-center">
+										<a href="Fablab.html" class="button alt">Learn More</a>
+									</footer>
+									
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+				</div> 
+			</section>
+			<section id="LiveWork" class="wrapper style2">
+				<header class="align-center">
+					<h2><b> LIVE PROJECTS</b></h2>
+					<p>Here I present on going projetcs. Some of them are currently being developed, seaking for funding, or freezed due to COVID-19. </p>
+				</header>
+				<div class="inner">
+				<div class="grid-style">
+
+					<div>
+						<div class="box">
+							<div class="image fit">
+								<a href="TNMC.html">
+									<img src="images/TNMC/2.jpg"  />
+								</a>
+							</div>
+							<div class="content">
+								<header class="align-center">
+									<p>NEW MATERIALS FOR A CIRCULAR ECONOMY</p>
+									<h2>The New Material Coop</h2>
+								</header>
+								<footer class="align-center">
+									<a href="TNMC.html" class="button alt">Learn More</a>
+								</footer>
+							</div>
 						</div>
 					</div>
-				</div>
-            </section>
 
-                     <!-- Gallery -->
-         <h2 style="text-align:center">Gallery</h2>
+					<div>
+						<div class="box">
+							<div class="image fit">
+								<a href="Woodpack.html">
+									<img src="images/materials process1.2.png"  />
+								</a>
+							</div>
+							<div class="content">
+								<header class="align-center">
+									<p>SUSTAINABLE BY DESIGN</p>
+									<h2>Woodpack</h2>
+								</header>
+								<footer class="align-center">
+									<a href="TNMC.html" class="button alt">Learn More</a>
+								</footer>
+							</div>
+						</div>
+					</div>
+					
+					<div>
+						<div class="box">
+							<div class="image fit">
+								<a href="OSViscousExtrusion.html">
+									<img src="images/extrusion.jpg"  />
+								</a>
+							</div>
+							<div class="content">
+								<header class="align-center">
+									<p>DEVELOPMENT OF A LOW COST, OPEN SOURCE WORKFLOW FOR VISCOUS MATERIAL EXTRUSION</p>
+									<h2>Viscous Extrusión 4All</h2>
+								</header>
+								<footer class="align-center">
+									<a href="OSViscousExtrusion.html" class="button alt">Learn More</a>
+								</footer>
+							</div>
+						</div>
+					</div>
 
-         <div class="container">
-             <div class = "align-center">
-           <div class="mySlides">
-             <div class="numbertext">1 / 6</div>
-             <img src="images/ViscousExtrusion4All/bioFeeder.PNG" style="width:50%">
-           </div>
-         
-           <div class="mySlides">
-             <div class="numbertext">2 / 6</div>
-             <img src="images/ViscousExtrusion4All/Extrusor.jpg" style="width:30%">
-           </div>
-         
-           <div class="mySlides">
-             <div class="numbertext">3 / 6</div>
-             <img src="images/ViscousExtrusion4All/Extrusion.PNG" style="width:40%">
-           </div>
-             
-           <div class="mySlides">
-             <div class="numbertext">4 / 6</div>
-             <img src="images/ViscousExtrusion4All/mechanical.png" style="width:30%">
-           </div>
-         
-           <div class="mySlides">
-             <div class="numbertext">5 / 6</div>
-             <img src="images/ViscousExtrusion4All/PlacaV1.png" style="width:20%">
-           </div>
-             
-           <div class="mySlides">
-             <div class="numbertext">6 / 6</div>
-             <img src="images/ViscousExtrusion4All/Pneumatic.png" style="width:20%">
-           </div>
-         </div>
-             
-           <a class="prev" onclick="plusSlides(-1)">❮</a>
-           <a class="next" onclick="plusSlides(1)">❯</a>
-         
-           <div class="caption-container">
-             <p id="caption"></p>
-           </div>
-         
-           <div class="row">
-               
-             <div class="column">
-                 <div class = "align-center">
-                     <img class="demo cursor" src="images/ViscousExtrusion4All/bioFeeder.PNG" style="width:102%" onclick="currentSlide(1)" alt="">
-                 </div>
-             </div>
-             <div class="column">
-                 <div class="align-center">
-                    <img class="demo cursor" src="images/ViscousExtrusion4All/Extrusor.jpg" style="width:43.5%" onclick="currentSlide(2)" alt="">
-                </div>
-                </div>
-             <div class="column">
-                 <div>
-                    <img class="demo cursor" src="images/ViscousExtrusion4All/Extrusion.PNG" style="width:100%" onclick="currentSlide(3)" alt="">
-                </div>
-               </div>
-             <div class="column">
-                 <div class = "align-center">
-                     <img class="demo cursor" src="images/ViscousExtrusion4All/mechanical.png" style="width: 115%" onclick="currentSlide(4)" alt="">
-                 </div>
-             </div>
-             <div class="column">
-                 <div class = "align-center">
-                     <img class="demo cursor" src="images/ViscousExtrusion4All/PlacaV1.png" style="width:55.5%" onclick="currentSlide(5)" alt="">   
-                 </div>
-             </div>
-                     
-             <div class="column">
-                 <div class = "align-center">
-               <img class="demo cursor" src="images/ViscousExtrusion4All/Pneumatic.png" style="width:50%" onclick="currentSlide(6)" alt="">
-             </div>
-             </div>
-           </div>
-         </div>
-         
-         <script>
-         var slideIndex = 1;
-         showSlides(slideIndex);
-         
-         function plusSlides(n) {
-           showSlides(slideIndex += n);
-         }
-         
-         function currentSlide(n) {
-           showSlides(slideIndex = n);
-         }
-         
-         function showSlides(n) {
-           var i;
-           var slides = document.getElementsByClassName("mySlides");
-           var dots = document.getElementsByClassName("demo");
-           var captionText = document.getElementById("caption");
-           if (n > slides.length) {slideIndex = 1}
-           if (n < 1) {slideIndex = slides.length}
-           for (i = 0; i < slides.length; i++) {
-               slides[i].style.display = "none";
-           }
-           for (i = 0; i < dots.length; i++) {
-               dots[i].className = dots[i].className.replace(" active", "");
-           }
-           slides[slideIndex-1].style.display = "block";
-           dots[slideIndex-1].className += " active";
-           captionText.innerHTML = dots[slideIndex-1].alt;
-         }
-         </script>
-         
+					<div>
+						<div class="box">
+							<div class="image fit">
+								<a href="megafield.html">
+									<img src="images/MegaBrain2.png"  />
+								</a>
+							</div>
+							<div class="content">
+								<header class="align-center">
+									<p>INTERACTIVE USER INTERFACE FOR ROBOTIC EDUCATION</p>
+									<h2>MegaField</h2>
+								</header>
+								<footer class="align-center">
+									<a href="megafield.html" class="button alt">Learn More</a>
+								</footer>
+							</div>
+						</div>
+					</div>
 
+					
 
+				
+			</div>
+
+			</section>
 
 		<!-- Footer -->
-		<footer id="footer">
-			<div class="container">
-				<ul class="icons">
-					<li><a href="https://www.linkedin.com/in/josetomasdominguez/" class="icon fa-linkedin"><span class="label"></span></a></li>
-					<li><a href="https://github.com/josetomas" class="icon fa-github"><span class="label"></span></a></li>
-					<li><a href="mailto:josetodf@gmail.com? subject= Contact WebPage" class="icon fa-envelope-o"><span class="label"></josetodf@gmail></span></a></li>
-				</ul>
-			</div>
-			<div class="copyright">
-				&copy; Untitled. All rights reserved.
-			</div>
-		</footer>
-
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="https://www.linkedin.com/in/josetomasdominguez/" class="icon fa-linkedin"><span class="label"></span></a></li>
+						<li><a href="https://github.com/josetomas" class="icon fa-github"><span class="label"></span></a></li>
+						<li><a href="mailto:josetodf@gmail.com? subject= Contact WebPage" class="icon fa-envelope-o"><span class="label"></josetodf@gmail></span></a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					&copy; Untitled. All rights reserved.
+				</div>
+			</footer>
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script>
+				function myFunction() {
+				  var x = document.getElementById("myTopnav");
+				  if (x.className === "topnav") {
+					x.className += " responsive";
+				  } else {
+					x.className = "topnav";
+				  }
+				}
+				</script>
 	</body>
 </html>
