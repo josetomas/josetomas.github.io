@@ -180,8 +180,7 @@ img {
 		<div class="topnav" id="myTopnav">
 			<a href="index_V2.html">José Tomás Domínguez</a>
 			<a href="AboutMe.html">About Me</a>
-			<a href="index_V2.html#SelectedWork">Selected Projects</a>
-			<a href="index_V2.html#LiveWork">Live Projects</a>
+			<a href="index_V2.html#SelectedWork">Projects</a>
 			<a href="index_V2.html#footer">Social Network</a>
 			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
 			  <i class="fa fa-bars"></i>
@@ -210,68 +209,101 @@ img {
 							<header class="align-center">
 								<p>ADITIVE MANUFACTURE FOR NATURAL FIBERS</p>
 							</header>
-							<p>
-								With the goal of developing novel biodegradable composites for advanced manufacture. A team formed by José Tomás Domínguez, researcher from <a href="http://fablab.usm.cl/">Fab Lab UTFSM</a>, and MIT PhD(c) <a href="http://palomagr.mit.edu/">Paloma Gonzalez</a>, started the development of an open source viscous material extrusion system, this system was intended to adapt any commercial 3D printer for BioComposite printing. The project started as part of my <a href="https://fabacademy.org/2019/labsdassault/students/jose-fuenzalida/">Fab Academy program</a> in <a href="https://3dexperiencelab.3ds.com/en/projects#Fablab/">Dassault System - 3D Experience Lab </a>. </p>
-							<p>
-								This work was first presented in a Fab15 conference in Egypt, in a workshop supported by Dassault Systems. 
-							</p>
-							<div class="image fit">
-								<img src="images/Egypt.jpg" alt="" />
-								<div class="align-center">
-									<figcaption>Presentation of the extrusion system and Lignin based material in Fab15 conference, Egypt. The system was installed in an Prusa build by people of <a href="https://fablabegypt.com/">Fab Lab Egypt</a>  </figcaption>
-								</div>
-							</div>
-							<p>
-							</p>
-							<p>
-								Back in Chile the project continued with the support of <a href="https://na.arauco.com/">Arauco</a>. They looked for the development of new BioComposites. These materials were intended to enable the incorporation of wood based materials such as wood pulp, lignin and wood ashes to the new manufacturing trends.  	
-							</p>
+							<p></p>
+              <h2>
+               <b> OBJECTIVE </b>
+                </h2>
+              <p>
+				To study the development of novel advanced manufacturing processes for Biopolymers, I built an extrusion system for viscous materials—this project aimed to develop an Open-Hardware workflow to accelerate the adoption of biodegradable materials for digital fabrication. The project’s final goal was to provide fabrication means that rely on locally fabricated and abundant raw materials to isolated communities at a large scale.  
+			</p>
+              <p>
+				I designed an extrusion system that could transform any commercial 3D printer into a biopolymer 3D printer with those goals in mind. Moreover, the system had to work with different materials. 
+			</p>
+                
+                <h2> <b> TECHNICAL DETAILS </b> </h2>
+			  <p>
+				I built an extrusion platform for viscous materials. This platform included:
+			</p>
+			<p>
+				A characterization of input parameters for the slicer configuration resulted in several print profiles for different materials (you can download them from <a href="https://www.dropbox.com/sh/9q9pej3tttwl3sj/AABJE--NdbnPRdN0yPFFcIEua?dl=0">here</a>) for CURA software. 
+			</p>
+			<p>
+				Auger screw-based extruder, with a design that was machine agnostic. Moreover, it could work for different material feeders. In addition, two feed systems were designed—a pneumatic system based on air pressure extrusion. And a mechanical system based on a piston extrusion.  	
+			</p>
+			<div class="align-center">
+                <img src="images/advanceManufacture/ExtrusionSystems.png" width="1000" class="responsive">
+              </div>
+			<p>
+				The development of an Arduino Shield “BioFeeder.” This shield could control a mechanical extrusion system (based on a stepper motor and a piston), and a pneumatic extrusion system based on an air pump. Moreover, the pneumatic extrusion system included a closed-loop PID system that kept the air pressure inside the extrusion system constant as the material flowed out.  	
+			</p>
+			<div class="align-center">
+                <img src="images/advanceManufacture/Biofeeder.PNG" width="500" class="responsive">
+              </div>
+			  <p></p>
+			<p>
+				The system worked for different materials. We tested the resulting extrusion systems with clay and various biopolymer during the project’s scopes during the project’s scope, such as; lignin-based, wood cellulose-based, eggshell, and wood ashes.	
+			</p>
+			<p></p>
+			<p>
+				Wood Pulp
+			</p>
+			<div class="align-center">
+				<div class= "video-responsive">
+					<iframe width="600" height="350"
+						src="https://www.youtube.com/embed/YVNecXUz0zQ">
+					</iframe>
+				</div>
+				</div>
+				<p></p>
+				<p>
+					Wood Ashes	
+					</p>
+				<div class="align-center">
+					
+				<div class= "video-responsive">
+				<iframe width="600" height="350"
+					src="https://www.youtube.com/embed/ipTdtp_Ym4c">
+				</iframe>
+				</div>
+				</div>
+				<p></p>
+				<p> Ligning + Wood Pulp</p>
+				<div class="align-center">
+					<div class= "video-responsive">
+					<iframe width="600" height="350"
+						src="https://www.youtube.com/embed/v0uRegDuI0E">
+					</iframe>
+					</div>
+					</div>
 
-							<p>
-								These composites were looking to enable the incorporation of wood based materials such as wood pulp, lignin and wood ashes to new manufacturing trends. The project aimen to develope biodegradable materials, wich keeped ous from the development of a wood based filament. </p>  
+				
 
-								The project's first objective was the development of a whole system that enabled the incorporation of this raw materials into the additive manufacture industry. This system was formed by 3 parts:   
-								<ul>
-									<li>A viscous material  extrusion system.</li>
-									<li>A slicing system that considered this materials printing capabilities. 
-									</li>	
-									<li> Material formulas that tested the printing capabilities of wood pulp, and forestry organic waste such as lignin or wood ashes.  </p>	
-								</ul>			
-							<p><b>My contribution</b> to this project at the beginning was centered on the development of the extrusion system for commercial 3d printers. This system had to have the adaptability to work with fibers, different rhaeological properties of the material. After the system was working, my work center on defining the material physical, rhaelogical and mechanical conditions in order to be printable.  During the scope of the project I was more immersed into the material development, being that my principal task at the end. </p>
-							<p>The following videos shows the first print of each material, showing that the formulas worked for 3D printed systems.</p>
-							<div class="align-center">
-								<div class= "video-responsive">
-									<iframe width="600" height="350"
-										src="https://www.youtube.com/embed/YVNecXUz0zQ">
-									</iframe>
-								</div>
-								<p>
-									Wood pulp first print. A material formula that enabled the was developed. Even its rough superficial quality. A new extruder design was developed to get better qualities.
-								</p>
-							</div>
-							<div class="align-center">
-								<div class= "video-responsive">
-								<iframe width="600" height="350"
-									src="https://www.youtube.com/embed/ipTdtp_Ym4c">
-								</iframe>
-								</div>
-								<p>
-									Wood Ashes first print. A material formula that enabled the was developed. This shows that rough materials could be incorporated in the process, giving the final material more stifness. 
-								</p>
-							</div>
-							<div class="align-center">
-								<div class= "video-responsive">
-								<iframe width="600" height="350"
-									src="https://www.youtube.com/embed/v0uRegDuI0E">
-								</iframe>
-								</div>
-								<p>
-									3D Print, Lignin + Wood pulp. This material formula incorporated a rough material (lignin), to give the finishing part more stifness, and fibers (wood pulp) that gives the material more strength.  
-								</p>
-							</div>
 
-								
-								<p></p>
+              <h2> <b> RESULTS </b> </h2>
+            <p></p>
+			<p>
+				Undegradute Thesis. You can download the thesis document <a href="https://drive.google.com/file/d/1r8RcQNsOkKN3tF9n5JKUnZyk3U8WB5RD/view?usp=sharing">here</a> and the presentation from <a href="https://drive.google.com/file/d/1vs13DMFNTHHbdc55TY3x2UqfwOhKPe6l/view?usp=sharing">here</a>.
+			</p> 
+			<p>
+				This work was selected as one of the three Makers Unlimited by Dassault Systems to showcase on-demand at the 3D EXPERIENCE WORLD 2021. 
+			</p>
+			<div class="align-center">
+				<div class= "video-responsive">
+				<iframe width="600" height="350"
+					src="https://www.youtube.com/embed/ce-QDSHynLY">
+				</iframe>
+				</div>
+				</div> 
+				<p></p>
+				
+				<p></p>
+				<p>
+					The results were presented at the Fab 15 Conference in Egypt. 
+					</p>
+					<div class="align-center">
+					<img src="images/Egypt.jpg" style="width:50%">
+					</div>
+
 			</section>
 			<h2 style="text-align:center">Gallery</h2>
 
